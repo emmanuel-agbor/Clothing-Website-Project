@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="text-gray-600 font-nunito">
+   <div class="md:grid grid-cols-3 lg:grid-cols-1"><!--content wrapper-->
+    <div class="md:col-span-1 md:flex md:justify-end"> <!--div that carries all nav starts-->
+        <nav class="md:text-right">
+            <div class="flex justify-between items-center">
+                <h1 class="font-bold  p-4 border-b border-gray-100 text-xl">
+                    <a href="/" class="hover:text-gray-700">Spenser Clothes</a>
+                </h1>
+                <div class="px-4 cursor-pointer md:hidden" id="burger">
+                    <svg class="w-6" http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                      </svg>                      
+                </div>
+            </div>
+            <ul class="text-sm mt-6 hidden md:block" id="menu">
+                <li class="text-gray-700 font-bold">
+                    <a href="#" class="navarrange border-r-4 border-primary hover:text-primary">
+                        <span>Home</span>
+                        <svg class="w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
+                            <path strokeLinecap="round" strokeLinejoin="round" d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" /> </svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="navarrange border-r-4 border-white hover:text-primary">
+                        <span>About</span>
+                        <svg class="w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z" />
+                          </svg>
+                          
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="navarrange border-r-4 border-white hover:text-primary">
+                        <span>Contact</span>
+                        <svg class="w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+                          </svg>
+                          
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div><!--end nav-->
+    
+    <main class="px-16 py-6 bg-gray-100 md:col-span-2 lg:col-span-1">
+        <div class="flex justify-center  md:justify-end">
+            <a href="#" class="btn text-primary border-primary md:border-2 hover:bg-primary hover:text-white">Log in</a>
+            <a href="#" class="btn text-primary ml-2 border-primary md:border-2 hover:bg-primary hover:text-white">Sign up</a>
+        </div>
+        <header>
+            <h2 class="text-gray-700 text-6xl font-semibold sm:mt-2 ">Fashion</h2>
+            <h3 class="text-2xl font-semibold">For Kings</h3>
+        </header>
+
+        <div>
+            <h4 class="font-bold text-lg mt-12 pb-2 border-b border-gray-200">Latest Outfits</h4>
+            <div class="grid mt-8"> <!--this is the parent div that conatains all the cards for latest outfits-->
+                <!--cards go here for latest outfits-->
+                <div class="card hover:shadow-lg"> <!--card 1-->
+                    <img src="img/img1.png" alt="Brace vintage" class="w-full h-32 sm:h-48 object-cover">
+                    <div class="m-4">
+                        <span class="font-bold">Brace Vintage Polo </span>
+                        <span class="block text-gray-500 text-sm">Outfit by Ostre Phana</span>
+                    </div>
+                    <div class="badge">
+                        <span>25$</span>
+                    </div>
+                </div> <!--card 1 closes-->
+                <div class="card hover:shadow-lg"> <!--card 2-->
+                    <img src="img/img2.png" alt="Cotton slik" class="w-full h-32 sm:h-48 object-cover">
+                    <div class="m-4">
+                        <span class="font-bold">Diav Race Polo-white</span>
+                        <span class="block text-gray-500 text-sm">Outfit by Bardon Emmy</span>
+                    </div>
+                    <div class="badge">
+                        <span>15$</span>
+                    </div>
+                </div> <!--card 2 closes-->
+                <div class="card hover:shadow-lg"> <!--card 3-->
+                    <img src="img/img3.png" alt="Pocket jean" class="w-full h-32 sm:h-48 object-cover">
+                    <div class="m-4">
+                        <span class="font-bold">Brown Stretched Pocket jean</span>
+                        <span class="block text-gray-500 text-sm">Outfit by Castro Phileno</span>
+                    </div>
+                    <div class="badge">
+                        <span>34$</span>
+                    </div>
+                </div> <!--card 3 closes-->
+                  <div class="card hover:shadow-lg"> <!--card 4-->
+                    <img src="img/img8.png" alt="Hudi jacket" class="w-full h-32 sm:h-48 object-cover">
+                    <div class="m-4">
+                        <span class="font-bold">Hudi Brace jacket</span>
+                        <span class="block text-gray-500 text-sm">Outfit by Elit Manacok</span>
+                    </div>
+                    <div class="badge">
+                        <span>22$</span>
+                    </div>
+                </div> <!--card 4 closes-->
+                <div class="card hover:shadow-lg"> <!--card 5-->
+                    <img src="img/img6.png" alt="Dior vintage shorts" class="w-full h-32 sm:h-48 object-cover">
+                    <div class="m-4">
+                        <span class="font-bold">Dior Vintage Cobo </span>
+                        <span class="block text-gray-500 text-sm">Outfit by Oshana Johnson</span>
+                    </div>
+                    <div class="badge">
+                        <span>22$</span>
+                    </div>
+                </div> <!--card 5 closes-->
+                <div class="card hover:shadow-lg"> <!--card 6-->
+                    <img src="img/img7.png" alt="Rhide shirt&shorts" class="w-full h-32 sm:h-48 object-cover">
+                    <div class="m-4">
+                        <span class="font-bold">Rhide Shirts-&- shorts</span>
+                        <span class="block text-gray-500 text-sm">Outfit by Leneiva Edison</span>
+                    </div>
+                    <div class="badge">
+                        <span>14$</span>
+                    </div>
+                </div> <!--card 6 closes-->
+                <div class="card hover:shadow-lg"> <!--card 7-->
+                    <img src="img/img9.png" alt="Real-space Hudi Jacket" class="w-full h-32 sm:h-48 object-cover">
+                    <div class="m-4">
+                        <span class="font-bold">Blue-white Hudi Jacket</span>
+                        <span class="block md:inline-block text-gray-500 text-sm">Outfit by Castro Phileno</span>
+                    </div>
+                    <div class="badge">
+                        <span>37$</span>
+                    </div>
+                </div> <!--card 7 closes-->
+                  <div class="card hover:shadow-lg"> <!--card 8-->
+                    <img src="img/img5.png" alt="Classic Jean-trouser" class="w-full h-32 sm:h-48 object-cover">
+                    <div class="m-4">
+                        <span class="font-bold">Classic Artistic Jean-trouser</span>
+                        <span class="block text-gray-500 text-sm">Outfit by Festus Binalog</span>
+                    </div>
+                    <div class="badge">
+                        <span>31$</span>
+                    </div>
+                </div> <!--card 8 closes-->
+                <div class="card hover:shadow-lg"> <!--card 9-->
+                    <img src="img/img10.png" alt="Adidas Shorts" class="w-full h-32 sm:h-48 object-cover">
+                    <div class="m-4">
+                        <span class="font-bold">Sling Adidas Shorts </span>
+                        <span class="block md:inline-block text-gray-500 text-sm">Outfit by Emmanuel Etta</span>
+                    </div>
+                    <div class="badge">
+                        <span>28$</span>
+                    </div>
+                </div> <!--card 9 closes-->
+                <div class="card hover:shadow-lg"> <!--card 10-->
+                    <img src="img/img11.png" alt="Artistic short-cobo" class="w-full h-32 sm:h-48 object-cover">
+                    <div class="m-4">
+                        <span class="font-bold">Artistic Short & Freeble Polo</span>
+                        <span class="block text-gray-500 text-sm">Outfit by Levi Oscas</span>
+                    </div>
+                    <div class="badge">
+                        <span>24$</span>
+                    </div>
+                </div> <!--card 10 closes-->
+                <div class="card hover:shadow-lg"> <!--card 11-->
+                    <img src="img/img20.png" alt="Celvic boston Hats" class="w-full h-32 sm:h-48 object-cover">
+                    <div class="m-4">
+                        <span class="font-bold">Celvic Boston Hat</span>
+                        <span class="block text-gray-500 text-sm">Outfit by Aamie Castro</span>
+                    </div>
+                    <div class="badge">
+                        <span>30$</span>
+                    </div>
+                </div> <!--card 11 closes-->
+                  <div class="card hover:shadow-lg"> <!--card 12-->
+                    <img src="img/img12.png" alt="blue-white Men Polo" class="w-full h-32 sm:h-48 object-cover">
+                    <div class="m-4">
+                        <span class="font-bold">Blue-white Men Polo</span>
+                        <span class="block text-gray-500 text-sm">Outfit by Joshua Adams</span>
+                    </div>
+                    <div class="badge">
+                        <span>22$</span>
+                    </div>
+                </div> <!--card 12 closes-->
+                <div class="card hover:shadow-lg"> <!--card 13-->
+                    <img src="img/img15.png" alt="gray cotton-slik polo" class="w-full h-32 sm:h-48 object-cover">
+                    <div class="m-4">
+                        <span class="font-bold">Grey Cotton-slik Polo</span>
+                        <span class="block text-gray-500 text-sm">Outfit by Esvok Manni</span>
+                    </div>
+                    <div class="badge">
+                        <span>22$</span>
+                    </div>
+                </div> <!--card 13 closes-->
+                <div class="card hover:shadow-lg"> <!--card 14-->
+                    <img src="img/img14.png" alt="dhark all-slim fit" class="w-full h-32 sm:h-48 object-cover">
+                    <div class="m-4">
+                        <span class="font-bold">Dhark All-slim fit</span>
+                        <span class="block text-gray-500 text-sm">Outfit by Emmanuel Etta</span>
+                    </div>
+                    <div class="badge">
+                        <span>22$</span>
+                    </div>
+                </div> <!--card 14 closes-->
+                <div class="card hover:shadow-lg"> <!--card 15-->
+                    <img src="img/img18.png" alt="blue-white Men Polo" class="w-full h-32 sm:h-48 object-cover">
+                    <div class="m-4">
+                        <span class="font-bold">Cotton Allfit Nest polo</span>
+                        <span class="block text-gray-500 text-sm">Outfit by Duncan Inimfon</span>
+                    </div>
+                    <div class="badge">
+                        <span>22$</span>
+                    </div>
+                </div> <!--card 15 closes-->
+            </div>
+            
+            <h4 class="font-bold text-3xl mt-12 pb-2 border-b border-gray-200">Popular Outfits</h4>
+            <div class=" grid mt-8"> <!--this is the parent div that conatains all the cards for popular outfits-->
+                <!--cards go here for popular outfits-->
+                <div class="card hover:shadow-lg"> <!--card 1-->
+                    <img src="img/img21.png" alt="Brace vintage" class="w-full h-32 sm:h-48 object-cover">
+                    <div class="m-4">
+                        <span class="font-bold btn  text-primary border-primary md:border-2  hover:bg-primary hover:text-white"">Order</span>
+                    </div>
+                    <div class="badge">
+                        <span>25$</span>
+                    </div>
+                </div> <!--card 1 closes-->
+                <div class="card hover:shadow-lg"> <!--card 2-->
+                    <img src="img/img22.png" alt="Cotton slik" class="w-full h-32 sm:h-48 object-cover">
+                    <div class="m-4">
+                        <span class="font-bold"></span>
+                    </div>
+                    <div class="badge">
+                        <span>15$</span>
+                    </div>
+                </div> <!--card 2 closes-->
+                <div class="card hover:shadow-lg"> <!--card 3-->
+                    <img src="img/img23.png" alt="Pocket jean" class="w-full h-32 sm:h-48 object-cover">
+                    <div class="m-4">
+                        <span class="font-bold"></span>
+                    </div>
+                    <div class="badge">
+                        <span>34$</span>
+                    </div>
+                </div> <!--card 3 closes-->
+                  <div class="card hover:shadow-lg"> <!--card 4-->
+                    <img src="img/img26.png" alt="Hudi jacket" class="w-full h-32 sm:h-48 object-cover">
+                   
+                    <div class="badge">
+                        <span>22$</span>
+                    </div>
+                </div> <!--card 4 closes-->
+                <div class="card hover:shadow-lg"> <!--card 5-->
+                    <img src="img/img25.png" alt="Hudi jacket" class="w-full h-32 sm:h-48 object-cover">
+                    <div class="m-4">
+                        <span class="font-bold"></span>
+                    </div>
+                    <div class="badge">
+                        <span>22$</span>
+                    </div>
+                </div> <!--card 5 closes-->
+            </div>
+
+            <div class="flex justify-center">
+                <div class="btn mt-2 bg-secondary-100 text-secondary-200 hover:shadow-inner">Load More</div>
+            </div>
+
+        </div>
+            
+    </main>
+   </div> 
+  
+    <script src="index.js"></script>
+</body>
+</html>
